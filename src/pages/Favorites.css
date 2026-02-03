@@ -1,0 +1,22 @@
+.favorites-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .favorites-title {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .favorites-message {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .favorites-info {
+    margin-top: 1rem;
+    color: #999;
+  }

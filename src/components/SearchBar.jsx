@@ -18,11 +18,8 @@ function SearchBar({ onSearch }) {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search for recipes..."
-        className="search-input"
-      />
-      <button type="submit" className="search-button">
-        🔍 Search
-      </button>
+        className="search-input"/>
+      <button type="submit" className="search-button">Search</button>
     </form>
   );
 }
