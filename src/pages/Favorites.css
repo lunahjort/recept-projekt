@@ -1,22 +1,68 @@
 .favorites-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.favorites-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.favorites-message {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.favorites-info {
+  color: #999;
+  font-size: 1rem;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.favorites-card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.favorites-card-wrapper .recipe-card {
+  flex: 1;
+}
+
+.favorites-remove-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.favorites-remove-btn:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .favorites-container {
+    padding: 1rem;
   }
-  
-  .favorites-title {
-    color: #333;
-    margin-bottom: 1rem;
+
+  .favorites-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .favorites-message {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 1rem;
-  }
-  
-  .favorites-info {
-    margin-top: 1rem;
-    color: #999;
-  }
+}
