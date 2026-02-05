@@ -1,3 +1,4 @@
+// enkel, statisk informationssida
 import './About.css';
 
 function About() {
