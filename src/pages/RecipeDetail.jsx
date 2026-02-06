@@ -111,7 +111,7 @@ function RecipeDetail() {
       <div className="recipe-detail-header">
         <h1 className="recipe-detail-title">{recipe.strMeal}</h1>
         {/* Favorites-knapp - ändrar utseende baserat på isFavorite */}
-        <button className={`recipe-detail-fav-btn ${isFavorite ? 'favorited' : ''}`} onClick={toggleFavorite}> {isFavorite ? '❤️ Favorited' : '🤍 Add to Favorites'}</button>
+        <button className={`recipe-detail-fav-btn ${isFavorite ? 'favorited' : ''}`} onClick={toggleFavorite}> {isFavorite ? 'Favorited' : 'Add to Favorites'}</button>
       </div>
 
       {/* Receptbild */}
@@ -119,7 +119,7 @@ function RecipeDetail() {
 
       {/* Kategori och ursprungsland */}
       <div className="recipe-detail-info">
-        <span className="recipe-detail-badge">{recipe.strCategory}</span>
+        <span className="recipe-detail-badge">{recipe.strCategory}</span><br/>
         <span className="recipe-detail-badge">{recipe.strArea}</span>
       </div>
 

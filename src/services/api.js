@@ -61,8 +61,8 @@ export const getRandomRecipes = async (count = 8) => {
     const promises = Array(count).fill().map(() =>
       fetch(`${BASE_URL}/random.php`).then(res => res.json())
     );
-    // fetch returnerar ett Promise, .then() hanterar svaret direkt
-    // Promise.all() väntar tills ALLA anrop är klara
+    // fetch returnerar en promise, .then() hanterar svaret direkt
+    // Promise.all() väntar tills alla anrop är klara
     // om ett anrop misslyckas, misslyckas hela operationen
     // detta är effektivt eftersom alla anrop körs samtidigt (parallellt)
     const results = await Promise.all(promises);
